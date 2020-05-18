@@ -64,6 +64,9 @@ function updateValue() {
     
     ellipse(100, 200, 300, 300); //test oval 
     
+    fill(100)
+    ellipse(400, 400, 100, 100); // ima have nightmares about this git github thing tonight holy crap
+    
             // LON DEGREE big ellipse
     noStroke();
     fill(155 + lonDeg, 100 + lonDeg, 155 + lonDeg);
