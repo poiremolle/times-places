@@ -54,32 +54,37 @@ function updateValue() {
    } else { 
         background(205, 222, 222 + latDeg / 3)
    }
-
-// LONGITUDE DEGREE
-noStroke();   
-fill(200, 240, 220);
-    beginShape();
-    curveVertex(220, 100);
     
-    curveVertex(250, 50);
-    curveVertex(450, 100);
-    curveVertex(500, 300);
-    curveVertex(250, 400);
-    
-    curveVertex(210, 150);
-    endShape();
-
 // LATITUDE DEGREE
-    
-fill(200, 180, 230, 150);
+noStroke();    
+fill(200, 180, 230);
     beginShape();
-    curveVertex(60, 500);
-    curveVertex(50, 450);
-    curveVertex(120, 300);
-    curveVertex(300, 280);
-    curveVertex(400, 450);
-    curveVertex(390, 500);
+    curveVertex(width / 8.34, height);
+    
+    curveVertex(width / 10, height / 3.34 + latDeg * 3.33);
+    curveVertex(width / 5, height / 300 + latDeg * 3.33);
+    curveVertex(width / 1.67, height / 330 + latDeg * 3.33);
+    curveVertex(width / 1.25, height / 3.34 + latDeg * 3.33);
+    
+    curveVertex(width / 1.28, height);
     endShape();
+
+    
+// LONGITUDE DEGREE
+   
+fill(200, 240, 220, 150);
+    beginShape();
+    curveVertex(width - width, height / 5);
+    
+    curveVertex(width / 8.34 + lonDeg * 1.67, height / 8.34);
+    curveVertex(width / 2.3 + lonDeg * 1.67, height / 5);
+    curveVertex(width / 2 + lonDeg * 1.67, height / 1.67);
+    curveVertex(width / 8.34 + lonDeg * 1.67, height / 1.25);
+    
+    curveVertex(width - width, height / 3.34);
+    endShape();
+
+
     
     
     
