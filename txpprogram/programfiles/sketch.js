@@ -29,7 +29,7 @@ function wavyLine(x, y, w, h, strWeight) {
 
 
 function updateValue() {
- 
+    
     let latDeg = parseInt(select('#latdeg').value(), 10); // 0-90
     let latMin = parseInt(select('#latmin').value(), 10); // 0-60
     let latSec = parseInt(select('#latsec').value(), 10); // 0-60
@@ -54,6 +54,24 @@ function updateValue() {
    } else { 
         background(205, 222, 222 + latDeg / 3)
    }
+    
+// YEAR
+noStroke();
+fill(0);
+    beginShape();
+    vertex(width / 16.67, numYear + 30);
+    vertex(width / 8.6, numYear + 30);
+     vertex(width / 6.5, height / 2.25);
+    vertex(width / 5, height / 1.25);
+    vertex(width / 3.5, height / 1.18);
+    vertex(width / 2, height / 1.17);
+    vertex(width / 2 + numYear, height / 1.13);
+    vertex(width / 2 + numYear, height / 1.06);
+    vertex(width / 5.67, height / 1.06);
+    vertex(width / 9.67, height / 1.16);
+    vertex(width / 11, height / 1.2);
+    endShape(CLOSE);    
+    
     
 // LATITUDE DEGREE
 noStroke();    
@@ -84,11 +102,6 @@ fill(200, 240, 220, 150);
     curveVertex(width - width, height / 3.34);
     endShape();
 
-
-    
-    
-    
-    
     
     
 //    fill(0)
